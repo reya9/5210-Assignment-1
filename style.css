@@ -1,0 +1,325 @@
+/* Import two fonts from Google Fonts:
+   Share Tech Mono - main site font (sci-fi monospace feel)
+   Courier Prime - used for classified report sections */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Courier+Prime&display=swap');
+
+/* Makes all elements include padding and border inside their width*/
+*{ box-sizing: border-box;}
+
+
+/* CSS variables - define colours once, reuse everywhere
+   change here and it updates across the whole site */
+:root{
+    --nav-color: #ffffff;
+    --primary-color: #3d3c3c;
+}
+
+/* Sets the background colour and font for the whole page */
+body{
+    background-color: var(--primary-color);
+    font-family: 'Share Tech Mono', monospace;
+}
+
+
+
+/* Centres the page content and limits max width to 960px*/
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+/* Navbar styles - flex makes logo and links sit side by side
+   space-between pushes logo left and links right
+   align-items center vertically centres both */
+.navbar {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 10px;
+    width: 100%;
+}
+
+
+/* Hover effect on nav links
+   adds subtle highlight, changes text to blue, adds glow effect*/
+.nav-link li a:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #38bdf8;
+    text-shadow: 0 0 10px #38bdf8;
+    transition: all 0.3s, background-color 0.3s;
+}
+
+
+
+/* SCP content section - centred, max width, white text */
+.scp-entry {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+
+
+/* SCP image - fills container width but won't grow beyond 400px
+   border-radius gives slightly rounded corners */
+.scp-img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+
+
+.logo {
+    width: 120px;
+    height: 120px;
+    filter: invert(1);
+    flex-shrink: 0;
+}
+
+
+
+/* Classified report sections - styled to look like a document
+   dark background, left border accent, different font */
+.classified-report{
+    font-family: 'Courier Prime', monospace;
+    background-color: #1a1a1a;
+    border-left: 3px solid #ffffff;
+    padding: 10px 15px;
+    color: #cccccc; /* slightly grey text, easier on the eyes */
+}
+
+
+/* Makes all h1 headings larger than default */
+h1 {
+    font-size: 3rem;
+}
+
+
+/* Utility class for making something even bigger - apply with class="bigger" */
+.bigger{
+    font-size: 5rem;
+}
+
+
+/* Styles for the actual link text inside the navbar */
+.nav-link li a{
+    position: relative;
+    font-size: 1.05rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* The navbar list - horizontal layout with spacing
+   removes bullet points, adds gap between links */
+.nav-link{
+    list-style: none;
+    display: flex;
+    gap: 2rem;/* space between each link */
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.object-class {
+    color: #e8b400; /* yellow/amber for Euclid */
+    font-weight: bold;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.label {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #aaaaaa;
+}
+
+.redacted {
+    background-color: #000000;
+    color: #000000; /* text hidden behind black background */
+    padding: 0 4px;
+    cursor: pointer;
+}
+
+h3{
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.scp-grid {
+    display: flex;
+    flex-wrap: wrap; /* cards wrap to next line on smaller screens */
+    gap: 20px;
+    justify-content: center; /* centers cards within each row */
+}
+
+.scp-card {
+    flex-basis: 250px; /* minimum card width before wrapping */
+    flex-grow: 1; /* cards grow to fill available space */
+}
+
+
+/* Hero banner - big dark section at top with centered text */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    color: #ffffff;
+    border-bottom: 1px solid #555555;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #aaaaaa;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+/* SCP cards grid */
+.scp-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Individual SCP card */
+.scp-card {
+    background-color: #2a2a2a;
+    border: 1px solid #555555;
+    border-radius: 8px;
+    padding: 20px;
+    flex-basis: 250px;
+    flex-grow: 1;
+    max-width: 300px;
+    color: #ffffff;
+}
+
+.scp-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:  #cc2200;
+}
+
+.card-class {
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+/* View File button */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.btn:hover {
+    background-color: #38bdf8;
+    color: #000000;
+    border-color: #38bdf8;
+}
+
+.card-img {
+    width: 100%;       
+    height: 150px;     
+    object-fit: cover;  /* crops the image to fill the space without stretching */
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    color: #555555;
+    border-top: 1px solid #444444;
+    margin-top: 40px;
+    font-size: 0.85rem;
+}
+
+.card-img.scp-003-img {
+    filter: hue-rotate(90deg) brightness(0.8);
+}
+
+.date {
+    color: #cc2200;
+    font-weight: bold;
+}
+
+h4 {
+    margin-top: 1.5rem;
+    color:  #cc2200;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-left: 2px solid #cc2200;
+    padding-left: 10px;
+}
+
+.safe {
+    color: #00aa44; 
+}
+
+.scp-entry ol {
+    color: #ffffff;
+    padding-left: 20px;
+    line-height: 2;
+}
+
+.scp-005-img {
+    filter: grayscale(100%) brightness(0.7);
+}
+
+.scp-006-img {
+    filter: grayscale(50%) brightness(0.7);
+}
+
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-link {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .object-class {
+        font-size: 3rem;
+    }
+}
+
+
