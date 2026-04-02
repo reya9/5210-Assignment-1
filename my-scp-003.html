@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Change this title for each page -->
+  
     <title>SCP-003</title>
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Navbar - same on every page, no changes needed here -->
+    <!-- Navbar - logo links back to home page -->
     <nav class="navbar">
+        <a href="index.html">
         <img src="SCP Subject Files/images/scp_logo.svg" class="logo" width="120" height="120" alt="SCP Foundation Logo">
+        </a>
         <ul class="nav-link">
             <li><a href="index.html" class="navlink">Home</a></li>
             <li><a href="my-scp-002.html" class="navlink">SCP-002</a></li>
@@ -22,28 +24,28 @@
         </ul>
     </nav>
 
-    <!-- Main SCP content - update everything inside this section -->
+    <!-- Main SCP-003 content -->
     <section class="scp-entry">
 
-        <!-- Change SCP-000 to the correct number e.g. SCP-003 -->
+        <!-- Label span styles the prefix differently from the SCP number -->
         <h1><span class="label">Item #:</span> SCP-003</h1>
 
-        <!-- Change the object class text below -->
-        <!-- For Safe use green color, Euclid use yellow, Keter use bright red -->
+        <!-- Euclid class displayed large - same yellow colour as SCP-002 for consistency -->
         <h2><span class="label">Object Class:</span></h2>
         <p class="object-class">Euclid</p>
 
-        <!-- Update the image src and alt text for each SCP -->
+        <!-- Circuit board image chosen to match SCP-003's biological motherboard description -->
+        <!-- hue-rotate filter applied in CSS to give it an alien green glow -->
         <img src="SCP Subject Files/images/michael-dziedzic-aQYgUYwnCsM-unsplash.jpg" class="card-img scp-003-img" alt="SCP-003">
 
-        <!-- Containment procedures - paste the original text here -->
+      
         <h3>Special Containment Procedures:</h3>
         <p>SCP-003 is to be maintained at a constant temperature of no less than 35°C and ideally kept above 100°C. No living multicellular organisms of Category IV or higher complexity may be allowed to come into contact with SCP-003.</p>
         <p>In event of total power failure, if SCP-003-1 begins to increase its mass, assigned personnel must engage in skin contact with SCP-003-1. Ideally, personnel may use their body heat to return SCP-003-1 to above the critical temperature; however, skin contact must be maintained even in event of SCP-003 reaching activation temperature, lasting at minimum until SCP-003-1 advances fully to its second growth stage.</p>
         <p>Personnel who enter SCP-003's containment area must first be examined for body parasites of Category IV or higher complexity, and sterilized if such organisms are present. All personnel who have come in physical contact with SCP-003-1 are to immediately report for sterilization afterwards.</p>
         <p>SCP-003-1 must not be removed from SCP-003-2 except in case of emergency procedures detailed above. Any significant change in SCP-003-2's rune activity (including pattern, frequency, or color) should be reported within three (3) hours of occurrence. Cessation of rune activity must be reported immediately. SCP-003-2 must be supplied with power via the source designated Generator 003-IX at all times.</p>
 
-        <!-- Description - paste the original text here -->
+        
         <h3>Description:</h3>
         <p>SCP-003 consists of two related components of separate origin, referred to as SCP-003-1 and SCP-003-2.</p>
         <p>SCP-003-1 appears to be composed of chitin, hair, and nails of unknown biology, arranged in a configuration similar to that of a computer motherboard. Testing reveals SCP-003-1 to predate earliest known circuit boards by a factor of thousands of years. SCP-003-1 is considered sentient but not actively dangerous except under certain conditions.</p>
@@ -59,8 +61,10 @@
         <p>While growth is consistent in the first stage, in the second stage SCP-003-1's growth rate is diminished by 20-90% so long as SCP-003-1 remains in contact with living organic material. The percentage is determined by the complexity of the organism(s) in contact with SCP-003-1; SCP-003-1 appears to devote a large amount of processing power to analysis of living organic material.</p>
         <p>During each of SCP-003-1's growth stages, SCP-003-2 releases bursts of radiation that temporarily inhibit SCP-003-1's growth, or reverse this growth when the temperature of SCP-003-1 rises above 100°C. Similar radiation emissions have been replicated or recorded via other anomalous means.</p>
         <p>SCP-003-1's biology has been the subject of extensive study. Significant elements have been identified similar to SCP-███, SCP-1512, and SCP-2756, the latter two of which have no further confirmed connection with SCP-003-1 and no known connection with each other, and none of which are fully understood (technically, even less understood than SCP-003, thanks to the extensive cross-disciplinary research on the SCP-003 objects). To date, no convincing analysis has been put forward which satisfactorily explains SCP-003-1's connection to these SCP objects or others, nor its connection to modern technology beyond appearance (and potential mimicry via unknown mechanism).</p>
+        <!-- remaining description paragraphs -->
 
-        <!-- Reference - paste the original text here if it exists -->
+        <!-- Addendums use h4 to sit below the main h3 sections as subsections -->
+        <!-- DATA EXPUNGED wrapped in redacted spans - black text on black background -->
         <h4>Addendum 003-01:</h4>
         <p>Acting on information gathered from linguistic analysis of SCP-003-2's runes and comparative data analysis, Research Team M03-Gloria has managed to establish a link between SCP-003 and <span class="redacted">[DATA EXPUNGED]</span> for analysis of functions. SCP-003-1 must now be considered sentient, and is to be kept a minimum of 1 km from <span class="redacted">[DATA EXPUNGED] </span>and the resulting "by-product" at all times.</p>
         <h4>Addendum 003-02:</h4>
@@ -79,7 +83,7 @@
 
     </section>
 
-    <!-- Footer - same on every page, no changes needed -->
+    <!-- Footer consistent across all pages -->
     <footer class="site-footer">
         <p>SCP Foundation — Secure. Contain. Protect.</p>
     </footer>
